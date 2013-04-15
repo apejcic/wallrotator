@@ -1,5 +1,7 @@
 #import "FileDownloader.h"
 
+#import "Misc.h"
+
 @implementation FileDownloader {
     NSMutableData *receivedData;
     NSURLConnection *con;
@@ -36,7 +38,7 @@
 
 - (void) download:(NSURL *)url
 {
-    NSURLRequest *req = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20.0];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     con = [[NSURLConnection alloc] initWithRequest:req delegate:self];
 }
 
@@ -52,39 +54,22 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+    NSLog(@"Connection failed! Error - %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{    
-    NSURL *path = [[self applicationDirectory] URLByAppendingPathComponent:@"background"];
+{
+    NSNumber *timeStampObj = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]];
+    NSString *filename = [NSString stringWithFormat:@"Wallrotator-%@", timeStampObj];
+    NSURL *path = [Misc pathInApplicationDirectory:filename];
     
     NSError* err = nil;
-    [receivedData writeToURL:path options:NSDataWritingAtomic error:&err];
-    
-    [delegate fileDownloaded:path];
+    if ([receivedData writeToURL:path options:NSDataWritingAtomic error:&err]) {
+        NSLog(@"Successfully wrote file to %@", path);
+        [delegate fileDownloaded:path];
+    } else
+        [NSException raise:@"File write failed." format:@"Err: %@", [err localizedDescription]];
 }
 
-- (NSURL*)applicationDirectory
-{
-    NSString* bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    NSFileManager* fm = [NSFileManager defaultManager];
-    NSURL* dirPath = nil;
-    
-    NSArray* appSupportDir = [fm URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask];
-    if ([appSupportDir count] > 0)
-    {
-        dirPath = [[appSupportDir objectAtIndex:0] URLByAppendingPathComponent:bundleID];
-
-        NSError*    theError = nil;
-        if (![fm createDirectoryAtURL:dirPath withIntermediateDirectories:YES attributes:nil error:&theError]) {
-            // TODO: mkdir
-            return nil;
-        }
-    }
-    return dirPath;
-}
 
 @end

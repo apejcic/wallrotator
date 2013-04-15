@@ -48,17 +48,19 @@ const NSString *serverUrl = @"http://glacial-inlet-1735.herokuapp.com/wallr/"; /
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+    NSLog(@"Connection failed! Error - %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSError* error;
-    NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:&error];
-
-    [self.delegate newWallpaperUrl:[jsonData objectForKey:@"url"]];
+    NSError* err;
+    NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:&err];
+    if (jsonData) {
+        [self.delegate newWallpaperUrl:[jsonData objectForKey:@"url"]];
+    } else {
+        [NSException raise:@"JSON parse failed." format:@"Err: %@", [err localizedDescription]];
+    }
+    
 }
 
 @end
