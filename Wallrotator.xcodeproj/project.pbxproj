@@ -16,7 +16,13 @@
 		900A6BE51719945000990992 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6BE41719945000990992 /* SenTestingKit.framework */; };
 		900A6BE61719945000990992 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6BC61719945000990992 /* Cocoa.framework */; };
 		900A6BEE1719945000990992 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900A6BEC1719945000990992 /* InfoPlist.strings */; };
-		900A6BF11719945000990992 /* BackrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6BF01719945000990992 /* BackrTests.m */; };
+		900A6BF11719945000990992 /* WallrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6BF01719945000990992 /* WallrTests.m */; };
+		900A6C00171A997F00990992 /* ApiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6BFF171A997F00990992 /* ApiController.m */; };
+		900A6C03171A999800990992 /* ScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6C02171A999800990992 /* ScreenController.m */; };
+		900A6C06171AB05F00990992 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6C05171AB05F00990992 /* MenuController.m */; };
+		900A6C10171B040400990992 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6C0F171B040400990992 /* FileDownloader.m */; };
+		900A6C18171B22D100990992 /* status_16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 900A6C17171B22D100990992 /* status_16x16@2x.png */; };
+		900A6C1A171B237200990992 /* status_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 900A6C19171B237200990992 /* status_16x16.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +36,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		900A6BC31719945000990992 /* Backr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		900A6BC31719945000990992 /* Wallrotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallrotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		900A6BC61719945000990992 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		900A6BC91719945000990992 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		900A6BCA1719945000990992 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		900A6BCB1719945000990992 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		900A6BCE1719945000990992 /* Backr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Backr-Info.plist"; sourceTree = "<group>"; };
+		900A6BCE1719945000990992 /* Wallrotator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wallrotator-Info.plist"; sourceTree = "<group>"; };
 		900A6BD01719945000990992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		900A6BD21719945000990992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		900A6BD41719945000990992 /* Backr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backr-Prefix.pch"; sourceTree = "<group>"; };
+		900A6BD41719945000990992 /* Wallrotator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallrotator-Prefix.pch"; sourceTree = "<group>"; };
 		900A6BD61719945000990992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		900A6BD81719945000990992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		900A6BD91719945000990992 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		900A6BDC1719945000990992 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		900A6BE31719945000990992 /* BackrTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackrTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		900A6BE31719945000990992 /* WallrotatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallrotatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900A6BE41719945000990992 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		900A6BEB1719945000990992 /* BackrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackrTests-Info.plist"; sourceTree = "<group>"; };
+		900A6BEB1719945000990992 /* WallrotatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WallrotatorTests-Info.plist"; sourceTree = "<group>"; };
 		900A6BED1719945000990992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		900A6BEF1719945000990992 /* BackrTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackrTests.h; sourceTree = "<group>"; };
-		900A6BF01719945000990992 /* BackrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackrTests.m; sourceTree = "<group>"; };
+		900A6BEF1719945000990992 /* WallrTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WallrTests.h; sourceTree = "<group>"; };
+		900A6BF01719945000990992 /* WallrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallrTests.m; sourceTree = "<group>"; };
+		900A6BFE171A997F00990992 /* ApiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiController.h; sourceTree = "<group>"; };
+		900A6BFF171A997F00990992 /* ApiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiController.m; sourceTree = "<group>"; };
+		900A6C01171A999800990992 /* ScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenController.h; sourceTree = "<group>"; };
+		900A6C02171A999800990992 /* ScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenController.m; sourceTree = "<group>"; };
+		900A6C04171AB05F00990992 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		900A6C05171AB05F00990992 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		900A6C0E171B040300990992 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
+		900A6C0F171B040400990992 /* FileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloader.m; sourceTree = "<group>"; };
+		900A6C17171B22D100990992 /* status_16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status_16x16@2x.png"; sourceTree = "<group>"; };
+		900A6C19171B237200990992 /* status_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_16x16.png; sourceTree = "<group>"; };
+		900A6C1B171B24A000990992 /* status_16x16@2x.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "status_16x16@2x.pxm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +92,8 @@
 		900A6BBA1719945000990992 = {
 			isa = PBXGroup;
 			children = (
-				900A6BCC1719945000990992 /* Backr */,
-				900A6BE91719945000990992 /* BackrTests */,
+				900A6BCC1719945000990992 /* Wallrotator */,
+				900A6BE91719945000990992 /* WallrotatorTests */,
 				900A6BC51719945000990992 /* Frameworks */,
 				900A6BC41719945000990992 /* Products */,
 			);
@@ -85,8 +102,8 @@
 		900A6BC41719945000990992 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				900A6BC31719945000990992 /* Backr.app */,
-				900A6BE31719945000990992 /* BackrTests.octest */,
+				900A6BC31719945000990992 /* Wallrotator.app */,
+				900A6BE31719945000990992 /* WallrotatorTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,54 +128,83 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		900A6BCC1719945000990992 /* Backr */ = {
+		900A6BCC1719945000990992 /* Wallrotator */ = {
 			isa = PBXGroup;
 			children = (
+				900A6C1C171B24B000990992 /* Icons */,
+				900A6C0A171AC09500990992 /* Vendor */,
 				900A6BD81719945000990992 /* AppDelegate.h */,
 				900A6BD91719945000990992 /* AppDelegate.m */,
 				900A6BDB1719945000990992 /* MainMenu.xib */,
 				900A6BCD1719945000990992 /* Supporting Files */,
+				900A6BFE171A997F00990992 /* ApiController.h */,
+				900A6BFF171A997F00990992 /* ApiController.m */,
+				900A6C01171A999800990992 /* ScreenController.h */,
+				900A6C02171A999800990992 /* ScreenController.m */,
+				900A6C04171AB05F00990992 /* MenuController.h */,
+				900A6C05171AB05F00990992 /* MenuController.m */,
+				900A6C0E171B040300990992 /* FileDownloader.h */,
+				900A6C0F171B040400990992 /* FileDownloader.m */,
 			);
+			name = Wallrotator;
 			path = Backr;
 			sourceTree = "<group>";
 		};
 		900A6BCD1719945000990992 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				900A6BCE1719945000990992 /* Backr-Info.plist */,
+				900A6BCE1719945000990992 /* Wallrotator-Info.plist */,
 				900A6BCF1719945000990992 /* InfoPlist.strings */,
 				900A6BD21719945000990992 /* main.m */,
-				900A6BD41719945000990992 /* Backr-Prefix.pch */,
+				900A6BD41719945000990992 /* Wallrotator-Prefix.pch */,
 				900A6BD51719945000990992 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		900A6BE91719945000990992 /* BackrTests */ = {
+		900A6BE91719945000990992 /* WallrotatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				900A6BEF1719945000990992 /* BackrTests.h */,
-				900A6BF01719945000990992 /* BackrTests.m */,
+				900A6BEF1719945000990992 /* WallrTests.h */,
+				900A6BF01719945000990992 /* WallrTests.m */,
 				900A6BEA1719945000990992 /* Supporting Files */,
 			);
+			name = WallrotatorTests;
 			path = BackrTests;
 			sourceTree = "<group>";
 		};
 		900A6BEA1719945000990992 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				900A6BEB1719945000990992 /* BackrTests-Info.plist */,
+				900A6BEB1719945000990992 /* WallrotatorTests-Info.plist */,
 				900A6BEC1719945000990992 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		900A6C0A171AC09500990992 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		900A6C1C171B24B000990992 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				900A6C1B171B24A000990992 /* status_16x16@2x.pxm */,
+				900A6C19171B237200990992 /* status_16x16.png */,
+				900A6C17171B22D100990992 /* status_16x16@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		900A6BC21719945000990992 /* Backr */ = {
+		900A6BC21719945000990992 /* Wallrotator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 900A6BF41719945000990992 /* Build configuration list for PBXNativeTarget "Backr" */;
+			buildConfigurationList = 900A6BF41719945000990992 /* Build configuration list for PBXNativeTarget "Wallrotator" */;
 			buildPhases = (
 				900A6BBF1719945000990992 /* Sources */,
 				900A6BC01719945000990992 /* Frameworks */,
@@ -168,14 +214,14 @@
 			);
 			dependencies = (
 			);
-			name = Backr;
+			name = Wallrotator;
 			productName = Backr;
-			productReference = 900A6BC31719945000990992 /* Backr.app */;
+			productReference = 900A6BC31719945000990992 /* Wallrotator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		900A6BE21719945000990992 /* BackrTests */ = {
+		900A6BE21719945000990992 /* WallrotatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 900A6BF71719945000990992 /* Build configuration list for PBXNativeTarget "BackrTests" */;
+			buildConfigurationList = 900A6BF71719945000990992 /* Build configuration list for PBXNativeTarget "WallrotatorTests" */;
 			buildPhases = (
 				900A6BDE1719945000990992 /* Sources */,
 				900A6BDF1719945000990992 /* Frameworks */,
@@ -187,9 +233,9 @@
 			dependencies = (
 				900A6BE81719945000990992 /* PBXTargetDependency */,
 			);
-			name = BackrTests;
+			name = WallrotatorTests;
 			productName = BackrTests;
-			productReference = 900A6BE31719945000990992 /* BackrTests.octest */;
+			productReference = 900A6BE31719945000990992 /* WallrotatorTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +247,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Aleksander Pejcic";
 			};
-			buildConfigurationList = 900A6BBE1719945000990992 /* Build configuration list for PBXProject "Backr" */;
+			buildConfigurationList = 900A6BBE1719945000990992 /* Build configuration list for PBXProject "Wallrotator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +259,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				900A6BC21719945000990992 /* Backr */,
-				900A6BE21719945000990992 /* BackrTests */,
+				900A6BC21719945000990992 /* Wallrotator */,
+				900A6BE21719945000990992 /* WallrotatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +273,8 @@
 				900A6BD11719945000990992 /* InfoPlist.strings in Resources */,
 				900A6BD71719945000990992 /* Credits.rtf in Resources */,
 				900A6BDD1719945000990992 /* MainMenu.xib in Resources */,
+				900A6C18171B22D100990992 /* status_16x16@2x.png in Resources */,
+				900A6C1A171B237200990992 /* status_16x16.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +311,10 @@
 			files = (
 				900A6BD31719945000990992 /* main.m in Sources */,
 				900A6BDA1719945000990992 /* AppDelegate.m in Sources */,
+				900A6C00171A997F00990992 /* ApiController.m in Sources */,
+				900A6C03171A999800990992 /* ScreenController.m in Sources */,
+				900A6C06171AB05F00990992 /* MenuController.m in Sources */,
+				900A6C10171B040400990992 /* FileDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900A6BF11719945000990992 /* BackrTests.m in Sources */,
+				900A6BF11719945000990992 /* WallrTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +331,7 @@
 /* Begin PBXTargetDependency section */
 		900A6BE81719945000990992 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 900A6BC21719945000990992 /* Backr */;
+			target = 900A6BC21719945000990992 /* Wallrotator */;
 			targetProxy = 900A6BE71719945000990992 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -384,9 +436,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Backr/Backr-Prefix.pch";
-				INFOPLIST_FILE = "Backr/Backr-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Backr/Wallrotator-Prefix.pch";
+				INFOPLIST_FILE = "Backr/Wallrotator-Info.plist";
+				PRODUCT_NAME = Wallrotator;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,9 +448,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Backr/Backr-Prefix.pch";
-				INFOPLIST_FILE = "Backr/Backr-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Backr/Wallrotator-Prefix.pch";
+				INFOPLIST_FILE = "Backr/Wallrotator-Info.plist";
+				PRODUCT_NAME = Wallrotator;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -411,8 +463,8 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Backr/Backr-Prefix.pch";
-				INFOPLIST_FILE = "BackrTests/BackrTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BackrTests/WallrotatorTests-Info.plist";
+				PRODUCT_NAME = WallrotatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -426,8 +478,8 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Backr/Backr-Prefix.pch";
-				INFOPLIST_FILE = "BackrTests/BackrTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BackrTests/WallrotatorTests-Info.plist";
+				PRODUCT_NAME = WallrotatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -436,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		900A6BBE1719945000990992 /* Build configuration list for PBXProject "Backr" */ = {
+		900A6BBE1719945000990992 /* Build configuration list for PBXProject "Wallrotator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				900A6BF21719945000990992 /* Debug */,
@@ -445,21 +497,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		900A6BF41719945000990992 /* Build configuration list for PBXNativeTarget "Backr" */ = {
+		900A6BF41719945000990992 /* Build configuration list for PBXNativeTarget "Wallrotator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				900A6BF51719945000990992 /* Debug */,
 				900A6BF61719945000990992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		900A6BF71719945000990992 /* Build configuration list for PBXNativeTarget "BackrTests" */ = {
+		900A6BF71719945000990992 /* Build configuration list for PBXNativeTarget "WallrotatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				900A6BF81719945000990992 /* Debug */,
 				900A6BF91719945000990992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

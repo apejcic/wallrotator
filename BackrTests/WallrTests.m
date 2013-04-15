@@ -1,14 +1,6 @@
-//
-//  BackrTests.m
-//  BackrTests
-//
-//  Created by Aleksander Pejcic on 4/13/13.
-//  Copyright (c) 2013 Aleksander Pejcic. All rights reserved.
-//
+#import "WallrTests.h"
 
-#import "BackrTests.h"
-
-@implementation BackrTests
+@implementation WallrTests
 
 - (void)setUp
 {

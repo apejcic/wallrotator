@@ -1,18 +1,14 @@
-//
-//  AppDelegate.m
-//  Backr
-//
-//  Created by Aleksander Pejcic on 4/13/13.
-//  Copyright (c) 2013 Aleksander Pejcic. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
-@implementation AppDelegate
+#import "MenuController.h"
+
+@implementation AppDelegate {
+    MenuController *menu;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    menu = [[MenuController alloc] init];
 }
 
 @end
